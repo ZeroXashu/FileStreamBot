@@ -7,11 +7,11 @@ class Telegram:
     API_ID = int(env.get("API_ID"))
     API_HASH = str(env.get("API_HASH"))
     BOT_TOKEN = str(env.get("BOT_TOKEN"))
-    OWNER_ID = int(env.get('OWNER_ID', '7978482443'))
+    OWNER_ID = int(env.get('OWNER_ID', ''))
     WORKERS = int(env.get("WORKERS", "6"))  # 6 workers = 6 commands at once
     DATABASE_URL = str(env.get('DATABASE_URL'))
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Telegram"))
-    SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
+    SESSION_NAME = str(env.get('SESSION_NAME', 'LDC_FILE_TO_LINK_BOT'))
     FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', False)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
